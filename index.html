@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All in one</title>
+    <link rel="stylesheet" href="style_reset/mcleod-reset.css">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!--SVG-->
+    <svg version="1.1"
+         xmlns="http://www.w3.org/2000/svg"
+         style="display:none">
+        <symbol id="home" viewBox="0 0 100 100">
+            <path d="M82.1,55.3c-0.2,0.3-0.6,0.4-0.9,0.5c0,0-0.1,0-0.1,0c-0.3,0-0.7-0.1-0.9-0.3L50,30.3L19.9,55.4
+		c-0.3,0.2-0.7,0.3-1,0.3c-0.3,0-0.7-0.2-0.9-0.5L15.2,52c-0.5-0.6-0.4-1.5,0.2-2L46.7,24c1.8-1.5,4.8-1.5,6.6,0l10.6,8.9v-8.5
+		c0-0.8,0.6-1.4,1.4-1.4h8.4c0.8,0,1.4,0.6,1.4,1.4v17.7l9.5,7.9c0.6,0.5,0.7,1.4,0.2,2L82.1,55.3z M75.1,75.9
+		c0,1.5-1.3,2.8-2.8,2.8H55.6V62H44.4v16.7H27.7c-1.5,0-2.8-1.3-2.8-2.8V55c0-0.1,0-0.2,0-0.3l25-20.6l25,20.6c0,0.1,0,0.2,0,0.3
+		V75.9z"/>
+        </symbol>
+    </svg>
+    <!--CSS -- internal style sheet-->
+    <style>
+        /*colors:
+            #FCFFF5
+            #D1DBBD
+            #91AA9D
+            #3E606F
+            #193441
+        */
+        /*--HEADER--*/
+        header{
+            /*position*/
+            height:3.5rem;
+            width:100%;
+            /*arrange content*/
+            position:fixed;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            /*formatting*/
+            background-color: #3E606F;
+            color:#FCFFF5;
+            /*font*/
+            font-family: 'Pacifico', cursive;
+        }
+        .homeSvg{
+            /*position*/
+            margin: 0 2.5rem;
+            /*formatting*/
+            font-size: 2rem;
+        }
+        .homeSvg:hover{
+            /*formatting*/
+            color:#D1DBBD;
+            cursor: pointer;
+        }
+        .headerTitle{
+            /*position*/
+            margin: 0 4rem 0 0;
+            /*formatting*/
+            font-size: 1.8rem;
+        }
+        .headerTitle:hover{
+            /*formatting*/
+            cursor: default;
+        }
+        /*--MAIN--*/
+        main{
+            /*position*/
+            width:100%;
+            height:100vh;
+        }
+        .blank-space{
+            /*position*/
+            height:3.5rem;
+        }
+        #atf{
+            /*position*/
+            z-index: -1;
+            width:100%;
+            height:100%;
+            position:fixed;
+            /*background*/
+            background-image: url(img/clouds-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*background-attachment: fixed;*/
+            filter: brightness(90%);
+        }
+        .content{
+            /*position*/
+            padding:2rem 4rem 2rem 4rem;
+        }
+        /*--FOOTER--*/
+        footer{
+            /*position*/
+            height:6rem;
+            width:100%;
+            /*formatting*/
+            background-color: #3E606F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <svg class="homeSvg"><use xlink:href="#home"></use></svg>
+            <h2 class="headerTitle">Just practice...</h2>
+    </header>
+    <div class="blank-space"></div>
+    <main>
+        <div id="atf"></div>
+        <div class="content">
+            <h1>Linklist:</h1>
+        </div>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
