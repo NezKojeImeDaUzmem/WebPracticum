@@ -1,14 +1,25 @@
-main{
+.none{
+    display:none;
+}
+/*-----BACKGROUND-----*/
+main {
     /*position*/
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     /*arrange content*/
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    /*background*/
-    background-color: white;
 }
+.backBrightness{
+    /*position*/
+    position:absolute;
+    width:100%;
+    height:100%;
+    /*formatting*/
+    background-color:rgba(0,0,0,0);
+}
+/*------CLOCK BOX-----*/
 .clock-div{
     /*position*/
     min-width:32rem;
@@ -22,7 +33,7 @@ main{
     /*formatting*/
     border-radius: 10px;
     background-color: whitesmoke;
-    filter:opacity(50%);
+    filter:opacity(40%);
     /*font*/
     font-size: 7rem;
     font-family: Algerian, sans-serif;
@@ -33,20 +44,84 @@ main{
 }
 span{
     width:2rem;
+    /*filter:opacity(50%);*/
 }
+/*---------INFO BUTTON-------*/
 .info{
     /*position*/
     position:fixed;
-    bottom:1rem;
-    left:1rem;
+    bottom:3vh;
+    left:1.6vw;
     /*formatting*/
     border-radius: 100%;
-    color:whitesmoke;
-    filter:opacity(45%);
-    cursor: pointer;
+    /*color:whitesmoke;*/
+    filter:opacity(50%);
 }
-.info:hover{
+.i-night{
     /*formatting*/
-    color:inherit;
+    color:whitesmoke;
+}
+.i-night:hover{
+    /*formatting*/
+    color:black;
     background-color: whitesmoke;
 }
+.i-day{
+    /*formatting*/
+    color:black;
+}
+.i-day:hover{
+    /*formatting*/
+    color:whitesmoke;
+    background-color: black;
+    filter:opacity(40%);
+}
+/*-----info content-----*/
+.info-content{
+    /*position*/
+    position:absolute;
+    bottom:1.2rem;
+    left:1.3rem;
+    padding:0.8rem;
+    /*height:14rem;*/
+    width:18rem;
+    /*formatting*/
+    color:inherit;
+    background-color: inherit;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Karma', serif;
+}
+/*-----BACK BUTTON-----*/
+.linklist{
+    /*position*/
+    position:fixed;
+    top:1.5vh;
+    left:2vh;
+    /*formatting*/
+    font-size: 1.4rem;
+    filter:opacity(50%);
+    border-radius: 100%;
+}
+.linklist:hover{
+     filter:opacity(85%);
+ }
+.linklist-day{
+    color:black;
+}
+.linklist-night{
+    color:whitesmoke;
+}
+/*-----CHANGE COLOR-----*/
+.colorBtn{
+    /*position*/
+    position:fixed;
+    bottom:3vh;
+    left:40%;
+    padding:0.1rem;
+    /*formatting*/
+    filter:opacity(50%);
+    border-radius: 5px;
+}
+
+/*TODO: MAKE TRANSITION ON BACK/HOME BUTTON*/

@@ -91,6 +91,10 @@
             /*formatting*/
             border-top:1px solid gainsboro;
         }
+        .clickBorder{
+            /*formatting*/
+            border:4px solid rgba(30,144,255,0.18);
+        }
     </style>
 </head>
 <body>
@@ -131,6 +135,14 @@
 
     </main>
     <script>
+
+        $('main').mousedown(function(){
+            $(this).addClass('clickBorder')
+        })
+        $('main').mouseup(function(){
+            $(this).removeClass('clickBorder')
+        })
+
         $(document).ready(function(){
             console.log('I am ready.')
             var text1 = $('.btn').html()
@@ -140,6 +152,7 @@
                 $(this).html(text == text2? text1 : text2)
                 $(this).parent().next().toggle('slow')
             })
+
             $('.one').hover(function(){$(this).find('.btn').css('backgroundColor','gainsboro')},
                             function(){$(this).find('.btn').css('backgroundColor','whitesmoke')})
         })
