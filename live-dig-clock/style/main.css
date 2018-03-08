@@ -1,6 +1,3 @@
-.none{
-    display:none;
-}
 /*-----BACKGROUND-----*/
 main {
     /*position*/
@@ -117,11 +114,69 @@ span{
     /*position*/
     position:fixed;
     bottom:3vh;
-    left:40%;
+    left:50%;
     padding:0.1rem;
     /*formatting*/
     filter:opacity(50%);
     border-radius: 5px;
 }
+.choseColorBox{
+    /*position*/
+    position:absolute;
+    width:8.5rem;
+    height:86%;
+    top:7%;
+    left:104%;
+    padding-right:0.4rem;
+    padding-left:0.6rem;
+    /*arrange content*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /*formatting*/
+    border-radius: 0 5px 5px 0;
+    background-color: whitesmoke ;
+    cursor:default;
+}
+.colorBox{
+    /*position*/
+    height:65%;
+    width:1.2rem;
+    display:block;
+    /*formatting*/
+    background-color: black;
+    border-radius: 3px;
+    cursor:pointer;
+    border:1px solid white;
+}
+#white{
+    /*color*/
+    background-color: rgba(0,0,0,1);
+}
+#blue{
+    /*color*/
+    background-color: rgba(0,188,212,1);
+}
+#green{
+    /*color*/
+    background-color: rgba(0,204,8,1);
+}
+#yellow{
+    /*color*/
+    background-color: rgba(255,229,0,1);
+}
+#pink{
+    /*color*/
+    background-color: rgba(233,30,99,1);
+}
+
+
+
+
+
 
 /*TODO: MAKE TRANSITION ON BACK/HOME BUTTON*/
+/*--IT HAS TO BE AT THE BOTTOM--*/
+.none{
+    display:none;
+}
